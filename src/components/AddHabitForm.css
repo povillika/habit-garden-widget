@@ -1,0 +1,61 @@
+.add-habit-form {
+  display: flex;
+  gap: 4px;
+}
+
+.add-habit-input {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #e8dcc8;
+  font-family: inherit;
+  font-size: 11px;
+  outline: none;
+}
+
+.add-habit-input::placeholder {
+  color: #7a6e5a;
+}
+
+.add-habit-input:focus {
+  border-color: rgba(150, 200, 100, 0.5);
+}
+
+.add-habit-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(150, 200, 100, 0.3);
+  border-radius: 4px;
+  background: rgba(150, 200, 100, 0.15);
+  color: #b0d080;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.add-habit-btn:hover:not(:disabled) {
+  background: rgba(150, 200, 100, 0.3);
+}
+
+.add-habit-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.add-habit-limit {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  line-height: 1.7;
+  color: #a08860;
+  text-align: center;
+  padding: 8px 6px;
+  background: rgba(160, 136, 96, 0.08);
+  border: 1px solid rgba(160, 136, 96, 0.15);
+  border-radius: 4px;
+}

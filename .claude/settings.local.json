@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(cd /tmp)",
+      "Bash(rm -rf habit-garden-tmp)",
+      "Bash(cp /tmp/habit-garden-tmp/.gitignore \"D:/Hobby/Habit garden/\")",
+      "Bash(cp /tmp/habit-garden-tmp/eslint.config.js \"D:/Hobby/Habit garden/\")",
+      "Bash(cp /tmp/habit-garden-tmp/index.html \"D:/Hobby/Habit garden/\")",
+      "Bash(cp /tmp/habit-garden-tmp/package.json \"D:/Hobby/Habit garden/\")",
+      "Bash(cp /tmp/habit-garden-tmp/vite.config.js \"D:/Hobby/Habit garden/\")",
+      "Bash(npm install:*)",
+      "Bash(rm -rf src/assets)",
+      "Bash(mkdir -p src/components src/hooks src/utils)",
+      "Bash(npx identify:*)",
+      "Bash(python3 -c \"from PIL import Image; img=Image.open\\('public/assets/background.png'\\); print\\(img.size\\)\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(start http://localhost:5173)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

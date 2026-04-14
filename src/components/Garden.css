@@ -1,0 +1,27 @@
+.garden {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-width: 0;
+  background: #2a2318;
+}
+
+.garden-inner {
+  position: relative;
+  width: 100%;
+}
+
+.garden-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+
+.garden-plots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 793 / 1983;
+}

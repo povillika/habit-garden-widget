@@ -1,0 +1,87 @@
+.habit-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.habit-item.wilted {
+  background: rgba(180, 120, 40, 0.15);
+  border-color: rgba(180, 120, 40, 0.3);
+}
+
+.habit-name {
+  flex: 1;
+  min-width: 0;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  line-height: 1.4;
+  color: #e8dcc8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.habit-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.habit-btn {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.habit-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: scale(1.08);
+}
+
+.habit-btn:active {
+  transform: scale(0.95);
+}
+
+.habit-btn.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.habit-btn.disabled:hover {
+  transform: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.habit-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(1.5);
+}
+
+.habit-stats {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  line-height: 1.5;
+  color: #a89878;
+  margin-top: 6px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
