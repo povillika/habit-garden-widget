@@ -1,4 +1,4 @@
-import { PLANT_IMAGES, PLOT_WIDTH_PCT, PLOT_HEIGHT_PCT } from '../utils/constants';
+import { PLANT_IMAGES, PLOT_WIDTH_PCT, PLOT_HEIGHT_PCT, BASE } from '../utils/constants';
 import { isToday } from '../utils/dateUtils';
 import { useMemo } from 'react';
 import './Plot.css';
@@ -21,8 +21,8 @@ export default function Plot({ position, plot, plant, habit }) {
   if (!plot.unlocked) return null;
 
   const plotImg = plant && isToday(plant.lastWateredDate)
-    ? '/assets/garden_plot_wet.png'
-    : '/assets/garden_plot_dry.png';
+    ? `${BASE}assets/garden_plot_wet.png`
+    : `${BASE}assets/garden_plot_dry.png`;
 
   const plantImg = plant
     ? PLANT_IMAGES[plant.status === 'wilted' ? 'wilted' : 'healthy'][plant.stage]

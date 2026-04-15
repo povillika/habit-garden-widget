@@ -1,4 +1,5 @@
 import { isToday } from '../utils/dateUtils';
+import { BASE } from '../utils/constants';
 import './HabitItem.css';
 
 export default function HabitItem({ habit, plant, onPlant, onWater, onRemove, onDelete }) {
@@ -12,10 +13,10 @@ export default function HabitItem({ habit, plant, onPlant, onWater, onRemove, on
         {!isPlanted ? (
           <>
             <button className="habit-btn plant-btn" onClick={() => onPlant(habit.id)} title="Plant">
-              <img src="/assets/plant-icon.png" alt="Plant" />
+              <img src={`${BASE}assets/plant-icon.png`} alt="Plant" />
             </button>
             <button className="habit-btn delete-btn" onClick={() => onDelete(habit.id)} title="Delete">
-              <img src="/assets/trashbin_icon.png" alt="Delete" />
+              <img src={`${BASE}assets/trashbin_icon.png`} alt="Delete" />
             </button>
           </>
         ) : (
@@ -26,10 +27,10 @@ export default function HabitItem({ habit, plant, onPlant, onWater, onRemove, on
               disabled={wateredToday}
               title={wateredToday ? 'Already watered today' : 'Water'}
             >
-              <img src="/assets/watering_can_icon.png" alt="Water" />
+              <img src={`${BASE}assets/watering_can_icon.png`} alt="Water" />
             </button>
             <button className="habit-btn remove-btn" onClick={() => onRemove(habit.id)} title="Remove from garden">
-              <img src="/assets/trashbin_icon.png" alt="Remove" />
+              <img src={`${BASE}assets/trashbin_icon.png`} alt="Remove" />
             </button>
           </>
         )}

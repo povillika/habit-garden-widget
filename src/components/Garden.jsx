@@ -1,5 +1,5 @@
 import Plot from './Plot';
-import { PLOT_POSITIONS } from '../utils/constants';
+import { PLOT_POSITIONS, BASE } from '../utils/constants';
 import './Garden.css';
 
 export default function Garden({ plots, plants, habits }) {
@@ -8,7 +8,7 @@ export default function Garden({ plots, plants, habits }) {
       <div className="garden-inner">
         <img
           className="garden-bg"
-          src="/assets/background.png"
+          src={`${BASE}assets/background.png`}
           alt="Garden"
           draggable={false}
         />

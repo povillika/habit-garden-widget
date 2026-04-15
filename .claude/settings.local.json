@@ -16,7 +16,10 @@
       "Bash(python3 -c \"from PIL import Image; img=Image.open\\('public/assets/background.png'\\); print\\(img.size\\)\")",
       "mcp__Claude_Preview__preview_start",
       "Bash(start http://localhost:5173)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(where gh:*)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Program Files \\(x86\\)/**)"
     ]
   }
 }

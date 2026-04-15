@@ -61,20 +61,23 @@ export const PRESET_HABITS = [
   'Walk',
 ];
 
+// Base URL for assets (handles GitHub Pages subpath)
+export const BASE = import.meta.env.BASE_URL;
+
 // Plant image mapping
 export const PLANT_IMAGES = {
   healthy: [
-    '/assets/seed-stage.png',
-    '/assets/fresh-sprout-stage.png',
-    '/assets/fresh-small-stage.png',
-    '/assets/fresh-adult-stage.png',
-    '/assets/fresh-flower-stage.png',
+    `${BASE}assets/seed-stage.png`,
+    `${BASE}assets/fresh-sprout-stage.png`,
+    `${BASE}assets/fresh-small-stage.png`,
+    `${BASE}assets/fresh-adult-stage.png`,
+    `${BASE}assets/fresh-flower-stage.png`,
   ],
   wilted: [
-    '/assets/seed-stage.png',
-    '/assets/dry-sprout-stage.png',
-    '/assets/dry-small-stage.png',
-    '/assets/dry-adult-stage.png',
-    '/assets/dry-flower-stage.png',
+    `${BASE}assets/seed-stage.png`,
+    `${BASE}assets/dry-sprout-stage.png`,
+    `${BASE}assets/dry-small-stage.png`,
+    `${BASE}assets/dry-adult-stage.png`,
+    `${BASE}assets/dry-flower-stage.png`,
   ],
 };
